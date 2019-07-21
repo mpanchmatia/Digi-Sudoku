@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Digi-Sudoku: Here is the answer!</title>
+    <script>
+        <!--
+            function new_sudoku() {
+                window.open ('new','_self',false)
+            }
+        //-->
+    </script>
+    <style type="text/css">
+        table {
+            margin:1em auto;
+        }
+        td {
+          height:30px;
+          width:30px;
+          border:1px solid;
+          text-align:center;
+        }
+        td:first-child {
+          border-left:solid;
+        }
+        td:nth-child(3n) {
+          border-right:solid ;
+        }
+        tr:first-child {
+          border-top:solid;
+        }
+        tr:nth-child(3n) td {
+          border-bottom:solid ;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border = 1>
+            {% for k in render['ip'] %}
+                {% if loop.index % 9 == 1 %}
+                    </tr><tr>
+                {% endif %}
+                {% if "0" in k %}
+                    <td bgcolor="#E0FFFF">{{ render['op'][loop.index - 1] }}</td>
+                {% else %}
+                    <td>{{ k }}</td>
+                {% endif %}
+            {% endfor %}
+            </tr>
+        </table>
+        <button type="button" onclick="new_sudoku()">New</button>
+    </center>
+</body>
+</html>

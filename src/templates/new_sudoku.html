@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Digi-Sudoku: New Sudoku challenge</title>
+    <script>
+        <!--
+            function solve_sudoku() {
+                var url = 'solve?challenge=';
+                var myTab = document.getElementById('sudoku_table');
+                for (i = 0; i < myTab.rows.length; i++) {
+                    var objCells = myTab.rows.item(i).cells;
+                    for (var j = 0; j < objCells.length; j++) {
+                    var cell = objCells.item(j).innerHTML.replace(/^\s+|\s+$/g, '');
+                        if (cell == "")
+                            url = url + '0';
+                        else
+                            url = url + cell;
+                    }
+                }
+                window.open (url,'_self',false);
+            }
+        //-->
+    </script>
+    <style type="text/css">
+        table {
+            margin:1em auto;
+        }
+        td {
+          height:30px;
+          width:30px;
+          border:1px solid;
+          text-align:center;
+        }
+        td:first-child {
+          border-left:solid;
+        }
+        td:nth-child(3n) {
+          border-right:solid ;
+        }
+        tr:first-child {
+          border-top:solid;
+        }
+        tr:nth-child(3n) td {
+          border-bottom:solid ;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border = 1 id="sudoku_table">
+            {% for ip in strInput %}
+                {% if loop.index % 9 == 1 %}
+                    </tr><tr>
+                {% endif %}
+                <td> {{ ip | replace("0", "") }} </td>
+            {% endfor %}
+            </tr>
+        </table>
+        <button type="button" onclick="solve_sudoku()">Solve</button>
+    </center>
+</body>
+</html>
