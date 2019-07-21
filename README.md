@@ -96,7 +96,7 @@ https://www.slideshare.net/ManishPanchmatia/digi-sudoku-156728547
 * Each algorithm is implemented as function ```Solve<Algorithm Name>```
 * Most of the algorithms has helper function to work on given region with name ```<Algorithm Name>SolveARegion```
 ### Future Scope
-* The abstract base class Sudoku can be extended for different size of Sudoku puzzles
+* The abstract base class ```Sudoku``` can be extended for different size of Sudoku puzzles
   * Mini Sudoku for kids 4 x 4
   * Super Sudoku 12 x 12
   * Giant Sudoku 15 x 15
