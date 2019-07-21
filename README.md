@@ -27,11 +27,11 @@ https://www.slideshare.net/ManishPanchmatia/digi-sudoku-156728547
 * The best possible software approach can be combination of ‘burst force’ and other techniques
 ### Approach in this "Digi-Sudoku" application
 * The ‘Digi-Sudoku’ application implements some of the basic techniques and advance techniques
-  * Function Zero: SingleCandidate
-  * Function One: ExplicitRegion
-  * Function Two: ImplicitRegion
-  * Function Three: CandidateLineTechnique
-  * Function Four: MultipleLinesTechnique 
+  * Function Zero: ```SingleCandidate```
+  * Function One: ```ExplicitRegion```
+  * Function Two: ```ImplicitRegion```
+  * Function Three: ```CandidateLineTechnique```
+  * Function Four: ```MultipleLinesTechnique```
 * These techniques are called in sequence as per FSM (Finite State Machine)
 ### Finite State Machine
 ![Finite State Machine](/images/FSM.gif)
