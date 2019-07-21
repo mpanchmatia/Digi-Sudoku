@@ -1,5 +1,6 @@
 # Digi-Sudoku
 Python Flask based application to solve Sudoku puzzle.
+https://www.slideshare.net/ManishPanchmatia/digi-sudoku-156728547
 ## Why name : “Digi-Sudoku” ?
 * Root: Digital Electronics
 * My github repository
