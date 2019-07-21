@@ -8,7 +8,7 @@ Python Flask based application to solve Sudoku puzzle.
   * To design digital circuit with AND and OR gates
 * The candidate values are stored as bitmap for empty cells. Bitmaps and bitwise operators optimize memory utilization. 
 ## Overall Architecture
-
+![Overall Architecture](/images/OverAllArch.gif)
 ### Future Scope
 * The architecture can be expanded as full-fledged website / mobile app, with user authentication, competition, prizes, usage analytics etc. 
 * The solution can be modified to deploy on micro-service based,  server-less architecture. 
@@ -32,7 +32,7 @@ Python Flask based application to solve Sudoku puzzle.
   * Function Four: MultipleLinesTechnique 
 * These techniques are called in sequence as per FSM (Finite State Machine)
 ### Finite State Machine
-
+![Finite State Machine](/images/FSM.gif)
 ### Future Scope
 * The ‘Digi-Sudoku’ application can be extended with additional sophisticated algorithms
 * Some heuristic rules can be also added to choose appropriate algorithm
@@ -49,7 +49,7 @@ Python Flask based application to solve Sudoku puzzle.
   * Unit Testing
   * Performance Measurement
 ### Execution Flow : End-User
-
+![Execution Flow : End-User](/images/ExecutionFlowEndUser.gif)
 #### Future Scope
 * The ‘Digi-Sudoku’ application can be enhanced with more UI and UX features
 * The application can reveal value for specific empty cell, as per user’s request as hint
@@ -63,7 +63,7 @@ Python Flask based application to solve Sudoku puzzle.
 * Further debugging is possible from console log
 * The additional code can be instrumented for performance measurement.
 #### Accessing all Sudoku Puzzles
-
+![Execution Flow : Developer](/images/ExecutionFlowDeveloper.gif)
 ## Naming Conventions
 ### Variables
 * Region is collection of cells
