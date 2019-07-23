@@ -49,6 +49,6 @@ Step 5 : install dependancies
 
 Step 6 : Run the Digi-Sudoku Python-Flask application
 
-```python src\app.py```
+```python src/app.py```
 
 Step 7 : Open Browser with URL : http://127.0.0.1:5000/
